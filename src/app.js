@@ -23,21 +23,6 @@ function moreAboutKaren(parents,noOfSiblings,isNuclearFamily){
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
-// function doesFriendExist(ageInText, ageInNumber){
-//     if(typeof(ageInNumber)==NaN)
-//     {
-//         return ageInNumber;
-//     }
-//     else if (typeof(ageInText)==NaN)
-//     {
-//     return ageInText;
-//     }
-//     else
-//     {
-//     return NaN;
-//     }
-
-// }
 function doesFriendExist(ageInText, ageInNumber) 
 {
     if (isNaN(ageInText))
@@ -116,6 +101,14 @@ function aDifficultChoice(choice){
 //Take all of Lily's strategies and concatenate them to a single var
 //Seperate the strategies by a single space
 //Return the length of the complete strategy
-function consoleKaren(strategies){
-    return 
+function consoleKaren(strategies)
+{
+         str=""
+        for(var i=0;i<strategies.length;i++)
+        {
+              str+=strategies[i] 
+              length=str.length;
+              return length;
+        }
+    
 }
